@@ -28,11 +28,11 @@ app.get('/api/tasks/:id', (req, res) => {
 // POST: Crear una nueva tarea
 app.post('/api/tasks', (req, res) => {
     const task = {
-    id: tasks.length + 1,
+    id: Math.max(...tasks.map(t => t.id)) + 1,
     title: req.body.title,
     description: req.body.description,
     completed: req.body.completed || false,
-    createdAt: new Date().toISOString(),
+    createdAt: new Date().toLocaleString(),
     };
     tasks.push(task);
     res.status(201).json(task);
