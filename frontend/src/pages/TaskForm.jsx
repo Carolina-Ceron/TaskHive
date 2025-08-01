@@ -71,7 +71,7 @@ const TaskForm = () => {
                         <label htmlFor="completed">Completed:</label>
                         <input type="checkbox" id="completed" checked={completed} onChange={(e) => setCompleted(e.target.checked)}/>
                     </div>
-                    <button type="submit">Add Task</button>
+                    <button type="submit">Save Changes</button>
                 </form>
             </div>
         </div>
