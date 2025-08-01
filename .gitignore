@@ -40,6 +40,9 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+frontend/node_modules/
+backend/node_modules/
+
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
@@ -98,6 +101,9 @@ dist
 # Sveltekit cache directory
 .svelte-kit/
 
+#vite
+.vite/
+
 # vitepress build output
 **/.vitepress/dist
 
@@ -137,3 +143,28 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
